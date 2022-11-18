@@ -1,0 +1,6 @@
+udo docker pull kalilinux/kali-rolling
+sudo docker run --name kaliDocker --tty --interactive kalilinux/kali-rolling
+exit
+sudo docker start kaliDocker
+sudo docker attach kaliDocker #pour le controller directement depuis notre terminal
+apt update && apt -y install kali-linux-headless
